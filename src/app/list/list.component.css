@@ -1,0 +1,14 @@
+.tableCell {
+    height: 1.6rem;
+    padding:0;
+    width: 25%;
+}
+
+.tableContent {
+    padding: 0;
+    margin: 0
+}
+
+.dimmed {
+    color: #ddd;
+}
