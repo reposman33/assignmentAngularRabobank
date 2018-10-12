@@ -20,7 +20,7 @@
             <input accept=".csv" (change)="fileChangeListener($event)" class="form-control-file"type="file">
           </td>
           <td colspan="2">
-            <div *ngIf="csvLoaded">
+            <div *ngIf="csvLoaded" class="d-flex justify-content-end">
               <label for="issueCount" class="mr-3">View minimum of</label>
               <select (change)="onChangeIssueCount($event.target.value)" name="issueCount">
                 <option value="" disabled>all</option>
