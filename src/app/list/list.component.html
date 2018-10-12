@@ -12,7 +12,7 @@
       <tbody>
         <tr *ngFor="let row of rows; let i = index">
           <td *ngFor="let col of headers; let j = index" class="tableCell">
-            <div [ngClass]="{'tableContent': true, 'dimmed': dimmedRows[i]}">{{(csvLoaded && i < displayCsvData.length) ? displayCsvData[i][j].value : ''}}</div>
+            <div [ngClass]="{'tableContent': true, 'dimmed': dimmedRows[i]}">{{(csvLoaded && i < csvData.length) ? csvData[i][j].value : ''}}</div>
           </td>
         </tr>
         <tr>
